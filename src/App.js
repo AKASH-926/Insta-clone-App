@@ -1,7 +1,12 @@
 import "./App.css";
+import Header from "./components/header/header";
 
 function App() {
-  return <>routes</>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
