@@ -1,0 +1,68 @@
+#card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+#card-wrap{
+   width: 400px;
+   height: 400px;
+   border: 1px solid black;
+   display: grid;
+   grid-template-rows: 17% 56% 30%;
+
+}
+#sub1{
+    border-bottom: 1px solid black;
+}
+#sub2{
+    border-bottom: 1px solid black;
+    width: 400px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    
+}
+#name{
+    font-size: 20px;
+    margin:1% 0 0 2%;
+    display: grid;
+    grid-template-columns: 87% 20%;
+    
+}
+#dots{
+    font-size: 25px;
+   letter-spacing: 3px;
+   cursor: pointer;
+}
+#place{
+    margin: 0% 0 0 4%;
+    font-size: 15px;
+    color: gray;
+}
+#post-image{
+    width: 100%;
+    height: 100%;
+}
+#icons_date{
+    display: grid;
+    padding-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    grid-template-columns: 10% 70% 30%;
+}
+#date{
+        margin-top: 8%;
+        font-size: small;
+}
+#likes{
+    margin-left: 3%;
+        margin-bottom: 2%;
+        font-size: small;
+        color: rgb(93, 87, 87);
+}
+#desc{
+    margin-left: 3%;
+    font-weight: 700;
+}
