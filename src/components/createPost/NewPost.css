@@ -1,0 +1,47 @@
+#file-container{
+   display: flex;
+   justify-content: center;
+   margin-top: 3%;
+}
+#file-wrap{
+    border: 1px solid black;
+    padding: 2%;
+}
+#file{
+    width: 300px;
+}
+#image_cont{
+    margin-bottom: 4%;
+    border: 1px solid rgba(0, 0, 0, 0.459);
+
+   
+}
+#Auth_cont{
+    margin-right: 0;
+    margin-bottom: 4%;
+width: 400px;
+
+}
+#author{
+    margin-right: 13%;
+    height: 20px;
+    
+}
+#location{
+    height: 20px;
+    margin: 0;
+}
+#desc_cont{
+    margin-bottom: 4%;
+}
+#description{
+    width:400px ;
+    margin: 0;
+    height: 20px;
+}
+#post_butn{
+    margin-left: 40%;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
