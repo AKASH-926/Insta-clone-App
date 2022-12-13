@@ -17,7 +17,7 @@ export default function NewPost() {
         }
     }
     const handleClick = async (e) => {
-        if (post.name !== "" && post.location !== "" && post.description !== "" && e.target.files[0].size <= 200000) {
+        if (post.name !== "" && post.location !== "" && post.description !== "") {
             seterr({ ...err, commonErr: true })
             setbuffer(false)
             e.preventDefault()
