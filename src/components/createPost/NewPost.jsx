@@ -1,30 +1,32 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
 import Header from '../header/header'
+import Loader from '../loaders/loader'
 
 import "./NewPost.css"
 export default function NewPost() {
     const history = useNavigate()
     const [post, setpost] = useState({ PostImage: "", name: "", location: "", description: "" })
-    const [buffer, setbuffer] = useState(false)
+    const [buffer, setbuffer] = useState(true)
     const config = {
         headers: {
             "content-type": "multipart/form-data"
         }
     }
     const handleClick = async (e) => {
-
+        setbuffer(false)
         e.preventDefault()
         await axios.post("http://localhost:8000/instaclone/data", post, config).then((response) => {
-            console.log(response)
+            setbuffer(true)
         })
         history("/instaclone")
     }
     return (
         <>
             <Header />
-            <div id='file-container'>
+            {buffer ? <div id='file-container'>
                 <div id='file-wrap'>
                     <form method='POST'>
                         <div id='image_cont'>
@@ -48,7 +50,9 @@ export default function NewPost() {
                         <button id='post_butn' type='submit' onClick={handleClick}>POST</button>
                     </form>
                 </div>
-            </div>
+            </div> : <Loader />}
+
+
         </>
     )
 }

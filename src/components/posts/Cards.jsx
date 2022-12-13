@@ -16,7 +16,7 @@ export default function Cards({ name, location, likes, description, date, PostIm
                 </div>
                 <div id='sub3'>
                     <div id='icons_date'><img src={fav} alt="favorites" /> <img src={send} alt="send" /> <span id='date'>{date}</span></div>
-                    <div id='likes'><p>{likes}</p></div>
+                    <div id='likes'><p>{likes} likes</p></div>
                     <div id='desc'><p>{description}</p></div>
                 </div>
 
