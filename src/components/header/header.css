@@ -1,26 +1,34 @@
 #header-wrap{
-    border-bottom: 1px solid black;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.34);
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: rgb(214, 213, 210);
 }
 #header-nav>ul{
 display: grid;
 grid-template-columns: 6% 80% 6%;
 padding-left: 10%;
 padding-right: 10%;
-margin-top: 1%;
+margin-top: 0%;
 }
 .font50px{
     font-size: 60px;
 }
 #logo{
     margin-top: 1%;
+    margin-bottom: 0;
+
 }
-#camera-icon{
-margin-top: 16%;
+#logo>a>img{
+    width:200px;
 }
-#camera-icon>img{
-    width: 55px;
-    height: 50px;
+
+#camera-icon>a>img{
+    margin-top: 5%;
+    width: 60px;
+    height: 60px;
+    transition: 112ms;
+}
+#camera-icon>a>img:hover{
+    transform: scale(1.3);
 }

@@ -2,18 +2,20 @@
    display: flex;
    justify-content: center;
    margin-top: 3%;
+   
 }
 #file-wrap{
-    border: 1px solid black;
+    
     padding: 2%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.586);
 }
 #file{
     width: 300px;
 }
 #image_cont{
     margin-bottom: 4%;
-    border: 1px solid rgba(0, 0, 0, 0.459);
-
+  
+box-shadow: 0 0 4px rgba(0, 0, 0, 0.863);
    
 }
 #Auth_cont{
@@ -44,4 +46,19 @@ width: 400px;
     width: 80px;
     height: 30px;
     cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 112ms;
+    border: none;
+}
+#post_butn:hover{
+    transform: scale(1.2);
+    background-color: green;
+    
+}
+.err{
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
 }
