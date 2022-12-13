@@ -56,3 +56,9 @@ width: 400px;
     background-color: green;
     
 }
+.err{
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}

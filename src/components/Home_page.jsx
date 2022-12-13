@@ -11,7 +11,7 @@ export default function Homepage() {
 
     useEffect(() => {
         setloader(false)
-        axios.get("http://localhost:8000/instaclone/data").then((response) => { { setdata(response.data.Posts) } setloader(true) }).catch((error) => {
+        axios.get("https://insta-clone-api-isco.onrender.com/instaclone/data").then((response) => { { setdata(response.data.Posts) } setloader(true) }).catch((error) => {
             console.log(error)
         })
 
