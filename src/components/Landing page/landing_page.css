@@ -1,0 +1,50 @@
+
+
+.main_container {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 30% 35%;
+    justify-content: center;
+
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#welcomeimg {
+    width: 400px;
+    height: 550px;
+}
+
+.msgcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 0px;
+    background-color: rgba(255, 255, 255, 0.758);
+    width: 500px;
+}
+
+#enterbutton {
+   
+    height: 35px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    transition: 112ms;
+
+}
+
+#enterbutton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
